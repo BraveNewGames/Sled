@@ -6,6 +6,7 @@
 - Project version: `ProjectSettings/ProjectVersion.txt` (6000.6.9f1)
 - Rendering: Unity's matching URP 17.6.0 package with project settings in `Assets/_Game/Settings/`.
 - Git for Windows is installed.
+- Visual Studio Community 2026 is installed and launchable at `C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\devenv.exe`.
 - Orchestrator.inc desktop is installed. Its agent catalog reports Claude Code and Codex installed and authorized.
 - Orchestrator project `sled-dogs-game` is registered with Codex as worker, Claude Code as orchestrator and reviewer, and `main` as its base branch.
 
