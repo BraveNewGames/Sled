@@ -7,6 +7,7 @@
 - Rendering: Unity's matching URP 17.6.0 package with project settings in `Assets/_Game/Settings/`.
 - Git for Windows is installed.
 - Orchestrator.inc desktop is installed. Its agent catalog reports Claude Code and Codex installed and authorized.
+- Orchestrator project `sled-dogs-game` is registered with Codex as worker, Claude Code as orchestrator and reviewer, and `main` as its base branch.
 
 The Editor version is read from the project at runtime by the check script. If Unity is installed elsewhere, pass its verified executable path with `-UnityPath`.
 
@@ -27,7 +28,7 @@ Track `Assets` and matching `.meta` files, `Packages`, `ProjectSettings`, design
 
 ## Orchestrator.inc
 
-This is one local Git repository. Register its root folder in Orchestrator's **Add project** flow. Set the base branch to `main` because this local repository has no remote default branch. Choose Codex or Claude Code as the worker and the other as a reviewer if desired. Both are already detected by Orchestrator on this computer.
+This is one local Git repository, already registered in Orchestrator as **Sled Dogs AI Sandbox**. The base branch is `main` because this local repository has no remote default branch. Codex is the default worker and Claude Code is the orchestrator and reviewer. Both are already detected by Orchestrator on this computer.
 
 Each Orchestrator worker gets a separate Git worktree. Run the check script inside that worktree, never against this original checkout while Unity is open here. Each worktree builds its own ignored `Library` cache. Keep the first task limited to a documented, approved behavior once design decisions are ready. A useful first worker task now is a documentation edit or a review of this setup.
 
