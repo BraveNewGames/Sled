@@ -1,0 +1,6 @@
+{
+  "name": "SledDogs.EditModeTests",
+  "rootNamespace": "SledDogs.Tests",
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}
